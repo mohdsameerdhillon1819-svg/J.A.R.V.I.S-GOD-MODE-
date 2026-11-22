@@ -1,0 +1,23 @@
+:root { color-scheme:dark; font-family:Inter,'Segoe UI',sans-serif; }
+*{box-sizing:border-box} body{margin:0;background:#050a14;color:#e3efff}
+#map{position:fixed;inset:0;background:#07121f}
+.leaflet-container{background:#061421}
+.panel{position:absolute;left:18px;top:18px;bottom:auto;width:330px;max-width:calc(100% - 36px);z-index:1000;overflow:auto;max-height:calc(100% - 56px);padding:19px;background:rgba(8,18,31,.95);border:1px solid #2d5373;border-radius:15px;box-shadow:0 12px 40px #0008;backdrop-filter:blur(15px)}
+h1{font-size:22px;margin:0;color:#74e6f9;letter-spacing:1px}h1 span{color:#38caff}h1 small{display:block;font-weight:450;letter-spacing:3.3px;font-size:10px;color:#86a9c8;margin:6px 0}
+.sub{font-size:10px;letter-spacing:1px;color:#7c95b4;margin:14px 0 17px;border-bottom:1px solid #294159;padding-bottom:13px}
+label{display:flex;gap:9px;align-items:center;padding:10px 5px;color:#cfe0ed;font-size:13px;cursor:pointer;border-bottom:1px solid #22364a}label:hover{background:#163149}label input{accent-color:#39c8ef}label .symbol{font-size:18px;width:22px;text-align:center;color:#44caf8}label small{margin-left:auto;color:#7d9ab2;font-size:10px;text-align:right;max-width:105px}
+.actions{display:flex;gap:9px;margin:16px 0}.actions button{flex:1;cursor:pointer;padding:10px 7px;color:#c9eaff;border:1px solid #366481;border-radius:8px;background:#152e45}.actions button:hover{background:#28516a}.stats{display:flex;gap:6px}.stats span{flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;font-size:9px;color:#8ba7bc;letter-spacing:.5px}.stats b{font-size:19px;color:#e0f4ff}#status{border-top:1px solid #294159;margin-top:17px;padding-top:13px;font-size:11px;color:#a6bed0;min-height:42px;white-space:pre-line;line-height:1.6}.note{font-size:10px;color:#8298ae;line-height:1.6;margin-bottom:0}
+footer{position:absolute;z-index:999;bottom:12px;right:12px;color:#bed8e5;font-size:10px;background:#091a2ac9;border-radius:6px;padding:8px;max-width:50%;text-align:right}a{color:#8fd7f2}.leaflet-control-attribution{font-size:10px}
+.marker{display:grid;place-items:center;filter:drop-shadow(0 0 5px currentColor);font-size:18px}.plane{color:#4ddfff}.sat{color:#b4a3ff}.ship{color:#69efbb}
+@media(max-width:640px){.panel{left:8px;top:8px;width:290px;max-width:calc(100% - 16px);max-height:58vh;padding:13px;opacity:.96}.panel h1{font-size:18px}.panel label{padding:7px 4px}footer{bottom:0;right:0;max-width:100%;font-size:8px}}
+
+#gesture-panel{border:1px solid #284d66;border-radius:10px;padding:9px;background:#071726;margin:5px 0 12px}
+#gesture-panel[hidden]{display:none}
+#gesture-video{width:100%;max-height:145px;object-fit:cover;transform:scaleX(-1);border-radius:7px;background:#010814}
+#gesture-state{font-size:12px;color:#5fe2fb;margin:5px 0}
+.gesture-help{font-size:11px;color:#9ab8cc;line-height:1.4}
+.actions button[aria-pressed="true"]{background:#164d4d;border-color:#48cfb7;color:#c7fff3}
+
+/* Dark HUD is a local visual filter over the verified Liberty tiles, no extra provider. */
+.godseye-dark #map .maplibregl-canvas {filter: invert(.89) hue-rotate(165deg) saturate(.65) brightness(.88) contrast(1.08);}
+.godseye-dark #map {background:#07121f;}

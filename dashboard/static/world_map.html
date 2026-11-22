@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JARVIS · World Intelligence Map</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.3.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.3.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="/world_map.css">
+</head><body>
+<div id="map" role="application" aria-label="Interactive world map"></div>
+<aside class="panel"><h1><span>◈</span> JARVIS <small>WORLD MAP</small></h1>
+<p class="sub">OPENFREEMAP · REGIONAL ADS-B · LIVE DATA</p>
+<label><input type="checkbox" id="planes" checked><span class="symbol">✈</span> Aircraft positions <small>Regional ADS-B</small></label>
+<label><input type="checkbox" id="sats" checked><span class="symbol">◉</span> Satellite estimates <small>CelesTrak</small></label>
+<label><input type="checkbox" id="ships"><span class="symbol">⛴</span> AIS vessels <small>AISstream</small></label>
+<label><input type="checkbox" id="trails"><span class="symbol">⌁</span> Observed vessel trails <small>Not planned routes</small></label>
+<label><input type="checkbox" id="seamarks"><span class="symbol">⚓</span> Nautical marks <small>OpenSeaMap</small></label>
+<label><input type="checkbox" id="traffic"><span class="symbol">▰</span> Traffic flow <small>TomTom</small></label>
+<div class="actions"><button id="refresh">↻ Refresh</button><button id="home">⌖ World view</button></div>
+<div class="actions"><button id="find-flights" title="Zoom to a supported regional map query">✈ Explore flights</button><button id="gesture-toggle" aria-pressed="false">✋ Enable gestures</button></div>
+<div class="actions"><button id="open-3d" title="Launch the official locally installed 3D globe">🌐 Open actual 3D Globe</button><button id="diagnose" title="Check local provider settings and feeds">🩺 Check feeds</button></div>
+<div class="actions"><button id="map-provider" title="Switch between OpenFreeMap and locally configured MapTiler">🗺 MapTiler style</button><button id="map-theme" aria-pressed="true">◐ Dark map: ON</button></div>
+<div id="gesture-panel" hidden><video id="gesture-video" autoplay muted playsinline></video><div id="gesture-state">Camera off</div><div class="gesture-help">Open palm: pan · Pinch: zoom · Two palms: zoom · Fist: pause</div></div>
+<section class="stats"><span>PLANES <b id="plane-count">—</b></span><span>SATELLITES <b id="sat-count">—</b></span><span>VESSELS <b id="ship-count">—</b></span></section>
+<div id="status" aria-live="polite">Starting map…</div>
+<p class="note">The default view starts in a regional flight area. Zoom to level 6+ over any other region. The regional ADS-B feeds may have incomplete coverage. Satellite positions are SGP4 estimates, not live satellite telemetry. Traffic and vessels need their own provider API keys; live coverage is incomplete. Data refreshes every 90 seconds.</p>
+</aside>
+<footer><a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> · © <a href="https://openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a> · Data from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · <a href="https://www.openseamap.org/" target="_blank" rel="noopener">OpenSeaMap</a> · CelesTrak · OpenSky · AISstream · TomTom</footer>
+<script defer src="/world_map.js"></script>
+<script type="module" src="/world_map_gestures.js"></script>
+</body></html>

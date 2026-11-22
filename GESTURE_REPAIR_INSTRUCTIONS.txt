@@ -1,0 +1,27 @@
+JARVIS GOD'S EYE VIEW - GESTURE REPAIR
+
+BEST FOR AN EXISTING INSTALLATION:
+1. Stop God's Eye View (Ctrl+C in the server terminal).
+2. Extract Mark-LVII-Gesture-Pinch-Repair-Patch.zip into your existing
+   Mark-LVII project folder (the folder containing main.py).
+   Confirm overwrite of the three updated files.
+3. In VS Code terminal opened in that Mark-LVII folder, run:
+   powershell -NoProfile -ExecutionPolicy Bypass -File .\FIX_GESTURES_WINDOWS.ps1
+4. Restart the 3D globe using:
+   py -3.12 start_world_map.py
+5. Browser: Ctrl+Shift+R. Click JARVIS HANDS and allow camera.
+
+CONTROLS:
+- Thumb + index finger PINCH and move hand UP/DOWN/LEFT/RIGHT: drag globe.
+- Spread TWO HANDS apart: zoom IN.
+- Move TWO HANDS together: zoom OUT.
+- Release pinch: stop moving globe.
+
+Check the on-screen status:
+- One hand detected: bring thumb and index together.
+- Pinch detected: move hand to pan.
+- Two hands detected: change distance between hands.
+- No hands detected: camera permissions, lighting, both hands in the frame.
+
+NOTE: Local webcam recognition and actual Cesium camera response require a
+Windows PC and cannot be verified by the offline tests in the package.
