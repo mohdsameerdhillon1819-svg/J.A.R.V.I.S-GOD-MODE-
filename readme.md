@@ -1,3 +1,4 @@
+i make the this mark57 more powerfull adding plugins like 3d earth globe and 3d model for study 
 > **Community integration edition:** This repository builds on the original Mark-LVII project by **FatihMakes**. The original project's **CC BY-NC 4.0** license and attribution are retained. Added integrations include God's Eye View launch support, experimental 3D gesture controls, optional embedded OpenJarvis SDK access, and a Gmail OAuth plugin. Some integrations require separate upstream software and configuration. **This edition is not affiliated with the upstream projects.** See [INTEGRATIONS_AND_LICENSES.md](INTEGRATIONS_AND_LICENSES.md) and [GITHUB_PUBLISH_GUIDE.md](GITHUB_PUBLISH_GUIDE.md).
 
 > **Status:** Automated offline tests are not a substitute for Windows, real webcam, Gmail OAuth, and live API testing. The 3D globe and webcam gestures should be treated as experimental until verified on your machine.
