@@ -3,10 +3,10 @@ i make the this mark57 more powerfull adding plugins like 3d earth globe and 3d 
 
 > **Status:** Automated offline tests are not a substitute for Windows, real webcam, Gmail OAuth, and live API testing. The 3D globe and webcam gestures should be treated as experimental until verified on your machine.
 
-# ⚙️ MARK LVII (57)
+# ⚙️ J.A.R.V.I.S GOD MODE
 ### The Ultimate Cross-Platform Personal AI Assistant — By FatihMakes
 
-> 📺 **[Watch the full setup video on YouTube](https://www.youtube.com/@FatihMakes)**
+
 
 A real-time voice AI that can hear, see, speak, and control your computer — on any OS. Supports Windows, macOS, and Linux. Built on the Gemini Live API for native audio streaming, delivering zero subscriptions and total digital autonomy.
 
@@ -14,7 +14,7 @@ A real-time voice AI that can hear, see, speak, and control your computer — on
 
 ## ✨ Overview
 
-Mark LVI let you choose what runs the assistant. **Mark LVII gives it work that
+Mark LVI let you choose what runs the assistant. **J.A.R.V.I.S GOD MODE gives it work that
 carries on while you are not watching.**
 
 Say *"research this for ten minutes"* or *"tonight at two, compare these three"*
@@ -38,7 +38,7 @@ routines use only what the app already had.
 
 ---
 
-## 📦 Mark LVI, in short
+## 📦 J.A.R.V.I.S GOD MODE, in short
 
 Until now this was a Gemini assistant, and only that. If you had no quota left, no
 connection, or a rule that says your microphone does not leave the building, you
@@ -61,7 +61,7 @@ inherits the avatar, the lip-sync, the self-echo guard, push-to-talk, the wake
 word, memory, undo, the confirmation gate and every action and plugin — because
 it enters through the same door the Live session always did.
 
-Mark LVI also changes what the assistant is allowed to CLAIM. Every tool that
+J.A.R.V.I.S GOD MODE also changes what the assistant is allowed to CLAIM. Every tool that
 drives an application now answers with what it observed rather than with what it
 attempted: `done` means it was checked, `unverified` means the request went out
 and could not be confirmed — and the assistant says exactly that instead of
@@ -149,8 +149,7 @@ It's not just an assistant — it's an extension of your digital life.
 | 🪪 Assistant Customization | Change the assistant name, your name, voice, and colour from the UI — takes effect immediately |
 
 ---
-
-## 🆕 What's New in Mark LVII
+J.A.R.V.I.S GOD MODE
 
 No new dependency. Everything below is built from what the app already had: the
 Gemini ladder, the DuckDuckGo search the web tool already used, and PyQt.
@@ -285,7 +284,7 @@ reach them.
 
 ---
 
-## 📦 Previously, in Mark LVI
+J.A.R.V.I.S GOD MODE
 
 **Nothing new is installed by default.** Talking to a model — local or hosted — uses `httpx`, which already ships with `google-genai`. The system's own voices need no Python package at all. Local speech recognition (`faster-whisper`) and the neural voice (`piper-tts`) are one-click installs from inside the panel, and are deliberately absent from `requirements.txt`: a fresh clone that only ever uses Gemini should not download several hundred megabytes for a feature it will not open.
 
